@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="iw" dir="rtl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SHLOMO</title>
+	<link rel="shortcut icon" href="img/icons/favicon.png" type="image/png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body style="background-image: url(img/bg/bg-2.jpg); --bg-color: rgba(33, 50, 94, 0.8);">
+	<header class="header">
+		<div class="user">
+			<div class="user__wrap">
+				<a class="user__link user__link--circle" href="#">
+					<img class="user__img" src="img/icons/user.svg" alt="User photo">
+				</a>
+
+				<div class="user__info">
+					<p class="user__name">שם סוכן
+						<span class="user__data">ישראל ישראלי</span>
+					</p>
+					<p class="user__phone">מספר
+						<a class="user__data" href="tel:123456">
+							123456
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="offers">
+			<div class="container">
+				<nav class="nav offers__nav">
+					<a class="logo nav__logo" href="#">
+						<img class="logo__img" src="img/icons/logo.png" alt="User photo">
+					</a>
+
+					<ul class="nav__list nav__list--switch">
+						<li class="nav__box">
+							<a class="nav__link nav__link--switch" href="#">הצעות אחרונות</a>
+						</li>
+						<li class="nav__box">
+							<a class="nav__link nav__link--switch nav__link--active" href="#">פוליסות שהופקו</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="offers__top">
+					<form class="offers__form" action="http://www.google.com/search" target="_blank" method="get">
+						<label class="visually-hidden" for="search">חפש כאן</label>
+						<input class="input offers__input" type="search" name="q" placeholder="חיפוש" autocomplete="off"
+							id="search">
+						<button class="offers__search" type="submit">
+							<span class="visually-hidden">התחל לחפש</span>
+							<svg width="32" height="32">
+								<use xlink:href="img/sprite.svg#icons--search"></use>
+							</svg>
+						</button>
+					</form>
+
+					<button class="btn btn--triangle offers__btn">הצעה חדשה</button>
+				</div>
+
+				<ul class="offers__content">
+					<li class="offers__point">
+						<ul class="offers__wrap offers__wrap--caption">
+							<li class="offers__data">ענף</li>
+							<li class="offers__data">מוצר</li>
+							<li class="offers__data">שם מבוטח</li>
+							<li class="offers__data">מס‘ רישוי</li>
+							<li class="offers__data">תעודת זהות</li>
+							<li class="offers__data">פתיחת ההצעה</li>
+							<li class="offers__data">תחילת הביטוח</li>
+							<li class="offers__data">מס‘ פוליסה</li>
+							<li class="offers__data offers__data--check">
+								נשלח ללקוח
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<svg width='30' height='20'>
+									<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+								</svg>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<svg width='30' height='20'>
+									<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+								</svg>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<svg width='30' height='20'>
+									<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+								</svg>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<svg width='30' height='20'>
+									<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+								</svg>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer></footer>
+
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

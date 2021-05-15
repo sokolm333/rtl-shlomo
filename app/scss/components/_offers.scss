@@ -1,0 +1,120 @@
+.offers {
+   padding: 30px 0;
+
+   &__nav {
+		padding-bottom: 15px;
+	}
+
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 35px;
+   }
+
+   &__form {
+      position: relative;
+      width: 100%;
+      margin-left: 30px;
+   }
+
+   &__input {
+      padding: 18px 30px;
+      display: block;
+      width: 100%;
+
+      &::placeholder {
+         font-size: 18px;
+         font-weight: 700;
+         color: $scorpion-500;
+      }
+   }
+
+   &__search {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      border-bottom-left-radius: 35px;
+      border-top-left-radius: 35px;
+      @include nobtn-style;
+      padding: 0 20px;
+      fill: $cello-500;
+      display: flex;
+      align-items: center;
+      transition: transform 0.5s, fill 0.3s;
+
+      svg {
+         max-width: 25px;
+         min-height: 25px;
+      }
+
+      &:focus {
+         transform: scale(1.2);
+      }
+
+      &:hover {
+         transform: rotate(360deg);
+      }
+
+      &:active {
+         fill: $green-haze;
+      }
+   }
+
+   &__btn {
+      padding-left: 10px;
+      padding-right: 10px;
+      min-width: 285px;
+      background-color: $green-haze;
+      border: 3px solid transparent;
+      transition: border-color 0.3s, background-color 0.3s;
+
+      &:focus {
+         border-color: $orange;
+      }
+
+      &:active {
+         border-color: $cello-500;
+         background-color: $cello-500;
+      }
+   }
+
+   &__bottom {}
+
+   &__content {
+      // display: table;
+      color: $cello-450;
+   }
+
+   &__point {
+      // display: table-row;
+
+      &:not(:last-child):not(:first-child) {
+         margin-bottom: 10px;
+      }
+   }
+
+   &__wrap {
+      width: 100%;
+      display: inline-grid;
+      grid-template-columns: 6% 15% 17% 1fr 1fr 1fr 1fr 1fr 1fr;
+      text-align: center;
+      border-radius: 35px;
+      background-color: $white;
+      padding: 10px 0;
+
+      &--caption {
+         margin-bottom: 12px;
+         color: $white;
+         background-color: transparent;
+         padding: 0;
+      }
+   }
+
+   &__data {
+      // display: table-cell;
+   }
+
+   &__data--check {}
+}
