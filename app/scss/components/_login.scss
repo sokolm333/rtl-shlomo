@@ -28,8 +28,6 @@
       }
    }
 
-   &__form {}
-
    &__inputs {
       display: flex;
       flex-direction: column;
@@ -45,6 +43,10 @@
    &__input {
       &:not(:last-child) {
          margin-bottom: 60px;
+      }
+
+      &--empty {
+         box-shadow: 0 0 10px 5px $red;
       }
    }
 
