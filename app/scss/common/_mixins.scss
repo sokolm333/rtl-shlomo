@@ -36,3 +36,11 @@
       max-height: $line-height * $lines * 1px;
    }
 }
+
+@function max($numbers...) {
+   @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+   @return m#{i}n(#{$numbers});
+}

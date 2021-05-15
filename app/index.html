@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body style="background-image: url(img/bg/background-1.jpg); --bg-color: rgba(33, 50, 94, 0.8);">
 	<header class="header">
 		<div class="user">
 			<div class="user__wrap">
@@ -38,7 +38,41 @@
 	</header>
 
 	<main>
+		<section class="login">
+			<div class="container">
+				<nav class="nav login__nav">
+					<a class="logo nav__logo" href="#">
+						<img class="logo__img" src="img/icons/logo.png" alt="User photo">
+					</a>
 
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="#">כניסה למערכת</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">צפיה בהצעת המחיר</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="login__prompt">
+					<p>הזן את קוד הכניסה, אם לא קיבלת קוד לחץ על <button class="login__prompt-btn">שליחת קוד חדש</button></p>
+				</div>
+
+				<form class="login__form" action="#">
+					<div class="login__inputs">
+						<label class="login__label" for="username">שם משתמש</label>
+						<input class="input login__input" type="text" id="username" required>
+						<label class="login__label" for="password">סיסמא</label>
+						<input class="input login__input" type="password" id="password" required>
+					</div>
+					<div class="login__buttons">
+						<button class="btn login__btn" type="reset">ביטול</button>
+						<button class="btn login__btn login__btn--submit" type="submit">כניסה</button>
+					</div>
+				</form>
+			</div>
+		</section>
 	</main>
 
 	<footer></footer>
