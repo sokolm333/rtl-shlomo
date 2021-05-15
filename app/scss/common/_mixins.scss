@@ -1,0 +1,39 @@
+// I need this mixin to test myself. I will delete it when I finish working with the project
+@mixin wowborder ($f) {
+   border: 3px solid ($f);
+}
+
+@mixin Gilroy($Gilroy-weight) {
+   font-family: "Gilroy", sans-serif;
+   font-weight: $Gilroy-weight;
+}
+
+@mixin bg ($src) {
+   background-image: $src;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+
+// @include text-clamp(1);
+@mixin text-clamp($lines: 2, $line-height: false) {
+   display: -webkit-box;
+   -webkit-line-clamp: $lines;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis; // многоточие
+
+   // Fallback for non-Webkit browsers
+   // (won't show `…` at the end of the block)
+   @if $line-height {
+      max-height: $line-height * $lines * 1px;
+   }
+}
+
+@function max($numbers...) {
+   @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+   @return m#{i}n(#{$numbers});
+}

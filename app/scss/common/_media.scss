@@ -1,0 +1,39 @@
+$screen-s-max: 575.98px;
+$screen-m-max: 767.98px;
+$screen-l-max: 991.98px;
+$screen-xl-max: 1199.98px;
+
+// Custom devices (1399.98)
+@mixin rwd($screen-width) {
+   @media only screen and (max-width: $screen-width+'px') {
+      @content;
+   }
+}
+
+// Small devices
+@mixin s {
+   @media only screen and (max-width: #{$screen-s-max}) {
+      @content;
+   }
+}
+
+// Medium devices
+@mixin m {
+   @media only screen and (max-width: #{$screen-m-max}) {
+      @content;
+   }
+}
+
+// Large devices
+@mixin l {
+   @media only screen and (max-width: #{$screen-l-max}) {
+      @content;
+   }
+}
+
+// Extra large devices
+@mixin xl {
+   @media only screen and (max-width: #{$screen-xl-max}) {
+      @content;
+   }
+}
