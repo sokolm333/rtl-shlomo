@@ -1,0 +1,57 @@
+.header {
+   font-size: 16px;
+}
+
+.user {
+   &__wrap {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 35px 20px;
+      background-color: $white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+   }
+
+   &__link {
+      border: none;
+      margin-left: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+
+      &:focus,
+      &:hover {
+         box-shadow: 0 0 10px 3px $green-haze;
+      }
+
+      &:active {
+         box-shadow: 0 0 50px 5px $green-haze;
+      }
+   }
+
+   &__img {
+      object-fit: cover;
+      width: 38px;
+      height: 38px;
+   }
+
+   &__info {
+      color: $green-haze;
+   }
+
+   &__data {
+      color: inherit;
+      font-weight: 700;
+   }
+
+   &__greeting {
+      display: block;
+      width: 100%;
+      color: $scorpion-400;
+      background-color: $scorpion-800;
+      padding: 28px 60px;
+      z-index: -1;
+      position: relative;
+      bottom: 0;
+   }
+}
