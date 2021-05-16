@@ -3,6 +3,18 @@
 
    &__nav {
       padding-bottom: 15px;
+
+      @include large {
+         margin-bottom: 0;
+
+         .logo {
+            display: none;
+         }
+
+         &::after {
+            display: none;
+         }
+      }
    }
 
    &__top {
@@ -10,12 +22,31 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 35px;
+      position: relative;
+
+      @include large {
+         margin-bottom: 55px;
+
+         &::after {
+            position: absolute;
+            content: "";
+            bottom: -30px;
+            width: 100%;
+            border-radius: 5px;
+            height: 5px;
+            background-color: $white;
+         }
+      }
    }
 
    &__form {
       position: relative;
       width: 100%;
       margin-left: 30px;
+
+      @include large {
+         margin-left: 15px;
+      }
    }
 
    &__search-btn {
@@ -30,6 +61,31 @@
       background-color: $green-haze;
       border: 3px solid transparent;
       transition: border-color 0.3s, background-color 0.3s;
+
+      @include large {
+         font-size: 0;
+         padding: 0;
+         border-radius: 50%;
+         min-width: 40px;
+         height: 40px;
+
+         &::after {
+            display: none;
+         }
+
+         &::before {
+            position: absolute;
+            content: "";
+            top: 3px;
+            bottom: 3px;
+            right: 3px;
+            left: 3px;
+            background-image: url(../img/icons/plus.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+         }
+      }
 
       &:focus {
          border-color: $orange;
@@ -49,6 +105,22 @@
    &__point {
       // display: table-row;
       position: relative;
+
+      @include rwd(1400) {
+         &::before {
+            content: "";
+            position: absolute;
+            top: 65px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 95%;
+            height: 2px;
+            margin: 0 auto;
+            background-color: $cello-450;
+            border-radius: 2px;
+         }
+      }
 
       &:hover .offers__hover {
          // display: flex;
@@ -72,6 +144,40 @@
       width: 0;
       opacity: 0;
       transition: opacity 0.3s;
+
+      @include rwd(1400) {
+         width: 100%;
+         opacity: 1;
+         top: 10px;
+         justify-content: flex-end;
+         transform: translate(0, 0);
+      }
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         right: 20px;
+         left: 0;
+         bottom: 0;
+         width: 70px;
+         height: 25px;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: contain;
+         display: none;
+
+         @include rwd(1400) {
+            display: block;
+         }
+      }
+
+      &--car {
+         &::before {
+            background-image: url(../img/icons/car.svg);
+         }
+      }
    }
 
    &__circle {
@@ -94,6 +200,11 @@
       align-items: center;
       transition: background-color 0.5s, color 0.3s;
 
+      @include rwd(1400) {
+         fill: $white;
+         background-color: $green-haze;
+      }
+
       &:hover {
          background-color: $orange;
          fill: $white;
@@ -110,6 +221,14 @@
       cursor: default;
       transition: background-color 0.5s, color 0.3s;
 
+      @include rwd(1400) {
+         display: flex;
+         // flex-direction: column;
+         flex-wrap: wrap;
+         margin: 0 auto;
+         padding-top: 68px;
+      }
+
       &:hover {
          background-color: $orange;
          color: $white;
@@ -124,6 +243,10 @@
          color: $white;
          background-color: transparent;
          cursor: text;
+
+         @include rwd(1400) {
+            display: none;
+         }
 
          &:hover {
             background-color: transparent;
@@ -146,6 +269,31 @@
       position: relative;
       padding: 13px 0;
 
+      @include rwd(1400) {
+         font-size: 30px;
+         font-weight: 700;
+         color: $cello-450;
+         padding: 13px 30px;
+
+         &:nth-child(1) {
+            display: none;
+         }
+
+         &:nth-child(2),
+         &:nth-child(3) {
+            text-align: right;
+            width: 100%;
+         }
+
+         &:nth-child(n+4) {
+            width: 50%;
+         }
+      }
+
+      @include large {
+         font-size: 20px;
+      }
+
       &:not(:last-child) {
          &::after {
             position: absolute;
@@ -157,6 +305,10 @@
             background-color: $scorpion-700;
             width: 1px;
             height: 70%;
+
+            @include rwd(1400) {
+               display: none;
+            }
          }
       }
 
@@ -180,6 +332,7 @@
 
    &__fake-checkbox {
       position: absolute;
+      top: 0;
       display: flex;
       justify-content: center;
       align-items: center;
