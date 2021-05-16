@@ -215,6 +215,51 @@ body {
    }
 }
 
+.search-form {
+
+   &__input {
+      padding: 18px 30px;
+      display: block;
+      width: 100%;
+
+      &::placeholder {
+         font-size: 18px;
+         font-weight: 700;
+         color: $scorpion-500;
+      }
+   }
+
+   &__btn {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      @include nobtn-style;
+      padding: 0 20px;
+      fill: $cello-500;
+      display: flex;
+      align-items: center;
+      transition: transform 0.5s, fill 0.3s;
+
+      svg {
+         max-width: 25px;
+         min-height: 25px;
+      }
+
+      &:focus {
+         transform: scale(1.2);
+      }
+
+      &:hover {
+         transform: rotate(360deg);
+      }
+
+      &:active {
+         fill: $green-haze;
+      }
+   }
+}
+
 .visually-hidden {
    position: absolute;
    width: 1px;

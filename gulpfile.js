@@ -32,8 +32,9 @@ function svgSprite() {
 		}))
 		.pipe(cheerio(cleanSvg({
 			tags: ['title', 'desc',],
-			attributes: ['style', 'fill', 'clip*', 'stroke'],
-			// attributes: ["style", "clip*", "stroke*"]
+			attributes: ['style', 'fill', 'clip*', 'stroke*'],
+			// attributes: ['style', 'fill*', 'clip*', 'stroke*'],
+			// attributes: ["style", "clip*", "stroke*"],
 		})))
 		.pipe(replace('&gt;', '>'))
 		.pipe(svg_sprite({

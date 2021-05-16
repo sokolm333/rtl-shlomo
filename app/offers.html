@@ -53,11 +53,12 @@
 				</nav>
 
 				<div class="offers__top">
-					<form class="offers__form" action="http://www.google.com/search" target="_blank" method="get">
+					<form class="search-form offers__form" action="http://www.google.com/search" target="_blank"
+						method="get">
 						<label class="visually-hidden" for="search">חפש כאן</label>
-						<input class="input offers__input" type="search" name="q" placeholder="חיפוש" autocomplete="off"
+						<input class="input search-form__input" type="search" name="q" placeholder="חיפוש" autocomplete="off"
 							id="search">
-						<button class="offers__search" type="submit">
+						<button class="search-form__btn offers__search-btn" type="submit">
 							<span class="visually-hidden">התחל לחפש</span>
 							<svg width="32" height="32">
 								<use xlink:href="img/sprite.svg#icons--search"></use>
@@ -79,7 +80,7 @@
 							<li class="offers__data">פתיחת ההצעה</li>
 							<li class="offers__data">תחילת הביטוח</li>
 							<li class="offers__data">מס‘ פוליסה</li>
-							<li class="offers__data offers__data--check">
+							<li class="offers__data">
 								נשלח ללקוח
 							</li>
 						</ul>
@@ -95,9 +96,32 @@
 							<li class="offers__data">04.04.2020</li>
 							<li class="offers__data">123456789012</li>
 							<li class="offers__data offers__data--check">
-								<svg width='30' height='20'>
-									<use xlink:href='img/sprite.svg#icons--check-mark'></use>
-								</svg>
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
 							</li>
 						</ul>
 					</li>
@@ -112,9 +136,32 @@
 							<li class="offers__data">04.04.2020</li>
 							<li class="offers__data">123456789012</li>
 							<li class="offers__data offers__data--check">
-								<svg width='30' height='20'>
-									<use xlink:href='img/sprite.svg#icons--check-mark'></use>
-								</svg>
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
 							</li>
 						</ul>
 					</li>
@@ -129,9 +176,32 @@
 							<li class="offers__data">04.04.2020</li>
 							<li class="offers__data">123456789012</li>
 							<li class="offers__data offers__data--check">
-								<svg width='30' height='20'>
-									<use xlink:href='img/sprite.svg#icons--check-mark'></use>
-								</svg>
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
 							</li>
 						</ul>
 					</li>
@@ -146,9 +216,552 @@
 							<li class="offers__data">04.04.2020</li>
 							<li class="offers__data">123456789012</li>
 							<li class="offers__data offers__data--check">
-								<svg width='30' height='20'>
-									<use xlink:href='img/sprite.svg#icons--check-mark'></use>
-								</svg>
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">שם המוצר</li>
+							<li class="offers__data">יצחק בן אברהם</li>
+							<li class="offers__data">12-345-67</li>
+							<li class="offers__data">039894872</li>
+							<li class="offers__data">12.10.2019</li>
+							<li class="offers__data">04.04.2020</li>
+							<li class="offers__data">123456789012</li>
+							<li class="offers__data offers__data--check">
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg width='30' height='20'>
+												<use xlink:href='img/sprite.svg#icons--check-mark'></use>
+											</svg>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='18' height='18'>
+										<use xlink:href='img/sprite.svg#icons--pencil'></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width='30' height='17'>
+										<use xlink:href='img/sprite.svg#icons--send-mail'></use>
+									</svg>
+								</button>
 							</li>
 						</ul>
 					</li>

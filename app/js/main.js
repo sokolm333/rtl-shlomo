@@ -26,19 +26,19 @@ $(function () {
 		$(this).addClass('nav__link--active');
 	});
 
-	$('.offers__search').on('click', (event) => {
+	$('.offers__search-btn').on('click', (event) => {
 		event.preventDefault();
 		event.stopPropagation();
-		if ($('.offers__input').val() == "") {
-			$('.offers__input').addClass('input--empty').focus();
+		if ($('.search-form__input').val() == "") {
+			$('.search-form__input').addClass('input--empty').focus();
 		} else {
 			$('.offers__form').submit();
-			$('.offers__input').val("").removeClass('input--empty');
+			$('.search-form__input').val("").removeClass('input--empty');
 		}
 	});
-	$('.offers__input').on('blur', () => {
-		if ($('.offers__search:hover').length == 0) {
-			$('.offers__input').val("").removeClass('input--empty');
+	$('.search-form__input').on('blur', () => {
+		if ($('.offers__search-btn:hover').length == 0) {
+			$('.search-form__input').val("").removeClass('input--empty');
 		}
 	});
 });
