@@ -15,6 +15,13 @@
    background-size: contain;
 }
 
+@mixin nobtn-style {
+   padding: 0;
+   margin: 0;
+   border: none;
+   background-color: transparent;
+}
+
 // @include text-clamp(1);
 @mixin text-clamp($lines: 2, $line-height: false) {
    display: -webkit-box;

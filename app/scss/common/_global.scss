@@ -1,4 +1,188 @@
+body {
+   font-family: 'Arimo', sans-serif;
+   font-weight: 400;
+   color: $white;
+   line-height: 1.2;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   background-size: cover;
+   background-attachment: fixed;
 
+   &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: var(--bg-color);
+      z-index: -1;
+   }
+
+   &::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.2) 12.59%, rgba(0, 0, 0, 0) 101.31%);
+      z-index: -2;
+   }
+}
+
+.logo {
+   &__img {
+      object-fit: contain;
+      width: 56px;
+      height: 56px;
+
+      @include large {
+         width: 40px;
+         height: 40px;
+      }
+   }
+}
+
+.container {
+   max-width: 1100px;
+   padding: 0 15px;
+   margin: 0 auto;
+
+   @include rwd(1400) {
+      max-width: 900px;
+   }
+
+   @include large {
+      max-width: 600px;
+   }
+}
+
+.input {
+   font-size: inherit;
+   padding: 15px;
+   border-radius: 30px;
+   border: 2px solid transparent;
+   color: $green-haze;
+   transition: box-shadow 0.3s;
+
+   @include large {
+      padding: 5px 15px;
+   }
+
+   &:focus,
+   &:hover {
+      outline: transparent;
+      box-shadow: 0 0 10px 5px $green-haze;
+   }
+
+   &--empty {
+      color: $red;
+      box-shadow: 0 0 10px 5px $red;
+   }
+
+   &--empty-focus {
+      &:focus {
+         color: $red;
+         box-shadow: 0 0 10px 5px $red;
+      }
+   }
+}
+
+.btn {
+   font-size: 24px;
+   color: inherit;
+   margin: 0;
+   border: 5px solid transparent;
+   padding: 10px;
+   min-width: 350px;
+   border-radius: 30px;
+
+   @include large {
+      font-size: 18px;
+      padding: 5px 10px;
+   }
+
+   &--triangle {
+      position: relative;
+      padding-left: 30px;
+
+      &::after {
+         position: absolute;
+         content: "";
+         top: 50%;
+         transform: translate(-15px, -50%);
+         width: 0;
+         height: 0;
+         border-top: 9px solid transparent;
+         border-right: 15px solid $white;
+         border-bottom: 9px solid transparent;
+         transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      }
+
+      &:hover {
+         &::after {
+            transform: translate(-35px, -50%);
+         }
+      }
+   }
+}
+
+.search-form {
+   &__input {
+      padding: 18px 30px;
+      display: block;
+      width: 100%;
+
+      @include large {
+         padding: 10px 20px;
+      }
+
+      &::placeholder {
+         font-size: 18px;
+         font-weight: 700;
+         color: $scorpion-500;
+
+         @include large {
+            font-weight: 400;
+         }
+      }
+   }
+
+   &__btn {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      @include nobtn-style;
+      padding: 0 20px;
+      fill: $cello-500;
+      display: flex;
+      align-items: center;
+      transition: transform 0.5s, fill 0.3s;
+
+      @include large {
+         padding: 15px;
+      }
+
+      svg {
+         max-width: 25px;
+         min-height: 25px;
+      }
+
+      &:focus {
+         transform: scale(1.2);
+      }
+
+      &:hover {
+         transform: rotate(360deg);
+      }
+
+      &:active {
+         fill: $green-haze;
+      }
+   }
+}
 
 .visually-hidden {
    position: absolute;

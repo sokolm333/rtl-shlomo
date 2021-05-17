@@ -11,28 +11,28 @@ $screen-xl-max: 1199.98px;
 }
 
 // Small devices
-@mixin s {
+@mixin small {
    @media only screen and (max-width: #{$screen-s-max}) {
       @content;
    }
 }
 
 // Medium devices
-@mixin m {
+@mixin medium {
    @media only screen and (max-width: #{$screen-m-max}) {
       @content;
    }
 }
 
 // Large devices
-@mixin l {
+@mixin large {
    @media only screen and (max-width: #{$screen-l-max}) {
       @content;
    }
 }
 
 // Extra large devices
-@mixin xl {
+@mixin extra-large {
    @media only screen and (max-width: #{$screen-xl-max}) {
       @content;
    }

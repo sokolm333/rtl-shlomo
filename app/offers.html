@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="iw" dir="rtl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SHLOMO</title>
+	<link rel="shortcut icon" href="img/icons/favicon.png" type="image/png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body style="background-image: url(img/bg/bg-2.jpg); --bg-color: rgba(33, 50, 94, 0.8);">
+	<header class="header">
+		<div class="user">
+			<div class="user__wrap">
+				<a class="user__link user__link--circle" href="#">
+					<img class="user__img" src="img/icons/user.svg" alt="User photo">
+				</a>
+
+				<div class="user__info">
+					<p class="user__name">שם סוכן
+						<span class="user__data">ישראל ישראלי</span>
+					</p>
+					<p class="user__phone">מספר
+						<a class="user__data" href="tel:123456">
+							123456
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<h1 class="visually-hidden"></h1>
+
+		<section class="offers">
+			<div class="container">
+				<h2 class="visually-hidden"></h2>
+
+				<nav class="nav offers__nav">
+					<a class="logo nav__logo" href="#">
+						<img class="logo__img" src="img/icons/logo.png" alt="User photo">
+					</a>
+
+					<ul class="nav__list nav__list--switch">
+						<li class="nav__box">
+							<a class="nav__link nav__link--switch nav__link--active" href="#">הצעות אחרונות</a>
+						</li>
+						<li class="nav__box">
+							<a class="nav__link nav__link--switch" href="#">פוליסות שהופקו</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="offers__top">
+					<form class="search-form offers__form" action="http://www.google.com/search" target="_blank"
+						method="get">
+						<label class="visually-hidden" for="search">חפש כאן</label>
+						<input class="input search-form__input" type="search" name="q" placeholder="חיפוש" autocomplete="off"
+							id="search">
+						<button class="search-form__btn offers__search-btn" type="submit">
+							<span class="visually-hidden">התחל לחפש</span>
+							<svg width="32" height="32">
+								<use xlink:href="img/sprite.svg#icons--search"></use>
+							</svg>
+						</button>
+					</form>
+
+					<button class="btn btn--triangle offers__btn">הצעה חדשה</button>
+				</div>
+
+				<ul class="offers__content">
+					<li class="offers__point">
+						<ul class="offers__wrap offers__wrap--caption">
+							<li class="offers__data"><span class="offers__data-title">ענף</span></li>
+							<li class="offers__data"><span class="offers__data-title">מוצר</span></li>
+							<li class="offers__data"><span class="offers__data-title">שם מבוטח</span></li>
+							<li class="offers__data"><span class="offers__data-title">מס‘ רישוי</span></li>
+							<li class="offers__data"><span class="offers__data-title">תעודת זהות</span></li>
+							<li class="offers__data"><span class="offers__data-title">פתיחת ההצעה</span></li>
+							<li class="offers__data"><span class="offers__data-title">תחילת הביטוח</span></li>
+							<li class="offers__data"><span class="offers__data-title">מס‘ פוליסה</span></li>
+							<li class="offers__data"><span class="offers__data-title">נשלח ללקוח</span></li>
+						</ul>
+					</li>
+
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">
+								<span class="offers__data-info">קולקטיב</span>
+								<h3 class="offers__data-title">שם המוצר</h3>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">שם מבוטח</span>
+								<span class="offers__data-title">יצחק בן אברהם</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">מספר רישוי</span>
+								<span class="offers__data-title">12-345-67</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תעודת זהות</span>
+								<span class="offers__data-title">039894872</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פתיחת הצעה</span>
+								<span class="offers__data-title">12.10.2019</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תחילת ביטוח</span>
+								<span class="offers__data-title">04.04.2020</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פוליסה</span>
+								<span class="offers__data-title">123456789012</span>
+							</li>
+							<li class="offers__data offers__data--check">
+								<!-- <span class="offers__check-title">(נשלחה ללקוח)</span> -->
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg class="offers__check-svg" width="30" height="20">
+												<use xlink:href="img/sprite.svg#icons--check-mark"></use>
+											</svg>
+											<span class="offers__check-title">(נשלחה ללקוח)</span>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover" style="--sm-bg-img: url(../img/small-icons/car.svg);">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="18" height="18">
+										<use xlink:href="img/sprite.svg#icons--pencil"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="30" height="17">
+										<use xlink:href="img/sprite.svg#icons--send-mail"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">
+								<span class="offers__data-info">קולקטיב</span>
+								<h3 class="offers__data-title">שם המוצר</h3>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">שם מבוטח</span>
+								<span class="offers__data-title">יצחק בן אברהם</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">מספר רישוי</span>
+								<span class="offers__data-title">12-345-67</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תעודת זהות</span>
+								<span class="offers__data-title">039894872</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פתיחת הצעה</span>
+								<span class="offers__data-title">12.10.2019</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תחילת ביטוח</span>
+								<span class="offers__data-title">04.04.2020</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פוליסה</span>
+								<span class="offers__data-title">123456789012</span>
+							</li>
+							<li class="offers__data offers__data--check">
+								<!-- <span class="offers__check-title">(נשלחה ללקוח)</span> -->
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg class="offers__check-svg" width="30" height="20">
+												<use xlink:href="img/sprite.svg#icons--check-mark"></use>
+											</svg>
+											<span class="offers__check-title">(נשלחה ללקוח)</span>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover" style="--sm-bg-img: url(../img/small-icons/bus.png);">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="18" height="18">
+										<use xlink:href="img/sprite.svg#icons--pencil"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="30" height="17">
+										<use xlink:href="img/sprite.svg#icons--send-mail"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">
+								<span class="offers__data-info">קולקטיב</span>
+								<h3 class="offers__data-title">שם המוצר</h3>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">שם מבוטח</span>
+								<span class="offers__data-title">יצחק בן אברהם</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">מספר רישוי</span>
+								<span class="offers__data-title">12-345-67</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תעודת זהות</span>
+								<span class="offers__data-title">039894872</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פתיחת הצעה</span>
+								<span class="offers__data-title">12.10.2019</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תחילת ביטוח</span>
+								<span class="offers__data-title">04.04.2020</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פוליסה</span>
+								<span class="offers__data-title">123456789012</span>
+							</li>
+							<li class="offers__data offers__data--check">
+								<!-- <span class="offers__check-title">(נשלחה ללקוח)</span> -->
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg class="offers__check-svg" width="30" height="20">
+												<use xlink:href="img/sprite.svg#icons--check-mark"></use>
+											</svg>
+											<span class="offers__check-title">(נשלחה ללקוח)</span>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover" style="--sm-bg-img: url(../img/small-icons/plane.png);">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="18" height="18">
+										<use xlink:href="img/sprite.svg#icons--pencil"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="30" height="17">
+										<use xlink:href="img/sprite.svg#icons--send-mail"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">
+								<span class="offers__data-info">קולקטיב</span>
+								<h3 class="offers__data-title">שם המוצר</h3>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">שם מבוטח</span>
+								<span class="offers__data-title">יצחק בן אברהם</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">מספר רישוי</span>
+								<span class="offers__data-title">12-345-67</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תעודת זהות</span>
+								<span class="offers__data-title">039894872</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פתיחת הצעה</span>
+								<span class="offers__data-title">12.10.2019</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תחילת ביטוח</span>
+								<span class="offers__data-title">04.04.2020</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פוליסה</span>
+								<span class="offers__data-title">123456789012</span>
+							</li>
+							<li class="offers__data offers__data--check">
+								<!-- <span class="offers__check-title">(נשלחה ללקוח)</span> -->
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg class="offers__check-svg" width="30" height="20">
+												<use xlink:href="img/sprite.svg#icons--check-mark"></use>
+											</svg>
+											<span class="offers__check-title">(נשלחה ללקוח)</span>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover" style="--sm-bg-img: url(../img/small-icons/car.svg);">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="18" height="18">
+										<use xlink:href="img/sprite.svg#icons--pencil"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="30" height="17">
+										<use xlink:href="img/sprite.svg#icons--send-mail"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">
+								<span class="offers__data-info">קולקטיב</span>
+								<h3 class="offers__data-title">שם המוצר</h3>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">שם מבוטח</span>
+								<span class="offers__data-title">יצחק בן אברהם</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">מספר רישוי</span>
+								<span class="offers__data-title">12-345-67</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תעודת זהות</span>
+								<span class="offers__data-title">039894872</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פתיחת הצעה</span>
+								<span class="offers__data-title">12.10.2019</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תחילת ביטוח</span>
+								<span class="offers__data-title">04.04.2020</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פוליסה</span>
+								<span class="offers__data-title">123456789012</span>
+							</li>
+							<li class="offers__data offers__data--check">
+								<!-- <span class="offers__check-title">(נשלחה ללקוח)</span> -->
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg class="offers__check-svg" width="30" height="20">
+												<use xlink:href="img/sprite.svg#icons--check-mark"></use>
+											</svg>
+											<span class="offers__check-title">(נשלחה ללקוח)</span>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover" style="--sm-bg-img: url(../img/small-icons/car.svg);">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="18" height="18">
+										<use xlink:href="img/sprite.svg#icons--pencil"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="30" height="17">
+										<use xlink:href="img/sprite.svg#icons--send-mail"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">
+								<span class="offers__data-info">קולקטיב</span>
+								<h3 class="offers__data-title">שם המוצר</h3>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">שם מבוטח</span>
+								<span class="offers__data-title">יצחק בן אברהם</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">מספר רישוי</span>
+								<span class="offers__data-title">12-345-67</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תעודת זהות</span>
+								<span class="offers__data-title">039894872</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פתיחת הצעה</span>
+								<span class="offers__data-title">12.10.2019</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תחילת ביטוח</span>
+								<span class="offers__data-title">04.04.2020</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פוליסה</span>
+								<span class="offers__data-title">123456789012</span>
+							</li>
+							<li class="offers__data offers__data--check">
+								<!-- <span class="offers__check-title">(נשלחה ללקוח)</span> -->
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg class="offers__check-svg" width="30" height="20">
+												<use xlink:href="img/sprite.svg#icons--check-mark"></use>
+											</svg>
+											<span class="offers__check-title">(נשלחה ללקוח)</span>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover" style="--sm-bg-img: url(../img/small-icons/car.svg);">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="18" height="18">
+										<use xlink:href="img/sprite.svg#icons--pencil"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="30" height="17">
+										<use xlink:href="img/sprite.svg#icons--send-mail"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">
+								<span class="offers__data-info">קולקטיב</span>
+								<h3 class="offers__data-title">שם המוצר</h3>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">שם מבוטח</span>
+								<span class="offers__data-title">יצחק בן אברהם</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">מספר רישוי</span>
+								<span class="offers__data-title">12-345-67</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תעודת זהות</span>
+								<span class="offers__data-title">039894872</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פתיחת הצעה</span>
+								<span class="offers__data-title">12.10.2019</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תחילת ביטוח</span>
+								<span class="offers__data-title">04.04.2020</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פוליסה</span>
+								<span class="offers__data-title">123456789012</span>
+							</li>
+							<li class="offers__data offers__data--check">
+								<!-- <span class="offers__check-title">(נשלחה ללקוח)</span> -->
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg class="offers__check-svg" width="30" height="20">
+												<use xlink:href="img/sprite.svg#icons--check-mark"></use>
+											</svg>
+											<span class="offers__check-title">(נשלחה ללקוח)</span>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover" style="--sm-bg-img: url(../img/small-icons/car.svg);">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="18" height="18">
+										<use xlink:href="img/sprite.svg#icons--pencil"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="30" height="17">
+										<use xlink:href="img/sprite.svg#icons--send-mail"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">
+								<span class="offers__data-info">קולקטיב</span>
+								<h3 class="offers__data-title">שם המוצר</h3>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">שם מבוטח</span>
+								<span class="offers__data-title">יצחק בן אברהם</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">מספר רישוי</span>
+								<span class="offers__data-title">12-345-67</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תעודת זהות</span>
+								<span class="offers__data-title">039894872</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פתיחת הצעה</span>
+								<span class="offers__data-title">12.10.2019</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תחילת ביטוח</span>
+								<span class="offers__data-title">04.04.2020</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פוליסה</span>
+								<span class="offers__data-title">123456789012</span>
+							</li>
+							<li class="offers__data offers__data--check">
+								<!-- <span class="offers__check-title">(נשלחה ללקוח)</span> -->
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg class="offers__check-svg" width="30" height="20">
+												<use xlink:href="img/sprite.svg#icons--check-mark"></use>
+											</svg>
+											<span class="offers__check-title">(נשלחה ללקוח)</span>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover" style="--sm-bg-img: url(../img/small-icons/car.svg);">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="18" height="18">
+										<use xlink:href="img/sprite.svg#icons--pencil"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="30" height="17">
+										<use xlink:href="img/sprite.svg#icons--send-mail"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">
+								<span class="offers__data-info">קולקטיב</span>
+								<h3 class="offers__data-title">שם המוצר</h3>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">שם מבוטח</span>
+								<span class="offers__data-title">יצחק בן אברהם</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">מספר רישוי</span>
+								<span class="offers__data-title">12-345-67</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תעודת זהות</span>
+								<span class="offers__data-title">039894872</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פתיחת הצעה</span>
+								<span class="offers__data-title">12.10.2019</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תחילת ביטוח</span>
+								<span class="offers__data-title">04.04.2020</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פוליסה</span>
+								<span class="offers__data-title">123456789012</span>
+							</li>
+							<li class="offers__data offers__data--check">
+								<!-- <span class="offers__check-title">(נשלחה ללקוח)</span> -->
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg class="offers__check-svg" width="30" height="20">
+												<use xlink:href="img/sprite.svg#icons--check-mark"></use>
+											</svg>
+											<span class="offers__check-title">(נשלחה ללקוח)</span>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover" style="--sm-bg-img: url(../img/small-icons/car.svg);">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="18" height="18">
+										<use xlink:href="img/sprite.svg#icons--pencil"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="30" height="17">
+										<use xlink:href="img/sprite.svg#icons--send-mail"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+
+					<li class="offers__point">
+						<ul class="offers__wrap">
+							<li class="offers__data">רכב</li>
+							<li class="offers__data">
+								<span class="offers__data-info">קולקטיב</span>
+								<h3 class="offers__data-title">שם המוצר</h3>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">שם מבוטח</span>
+								<span class="offers__data-title">יצחק בן אברהם</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">מספר רישוי</span>
+								<span class="offers__data-title">12-345-67</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תעודת זהות</span>
+								<span class="offers__data-title">039894872</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פתיחת הצעה</span>
+								<span class="offers__data-title">12.10.2019</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">תחילת ביטוח</span>
+								<span class="offers__data-title">04.04.2020</span>
+							</li>
+							<li class="offers__data">
+								<span class="offers__data-info">פוליסה</span>
+								<span class="offers__data-title">123456789012</span>
+							</li>
+							<li class="offers__data offers__data--check">
+								<!-- <span class="offers__check-title">(נשלחה ללקוח)</span> -->
+								<form class="offers__check-form" action="#">
+									<label class="offers__check-label">
+										<input class="offers__checkbox" checked="checked" type="checkbox" id="checkbox">
+										<span class="offers__fake-checkbox">
+											<svg class="offers__check-svg" width="30" height="20">
+												<use xlink:href="img/sprite.svg#icons--check-mark"></use>
+											</svg>
+											<span class="offers__check-title">(נשלחה ללקוח)</span>
+										</span>
+									</label>
+								</form>
+							</li>
+						</ul>
+						<ul class="offers__hover" style="--sm-bg-img: url(../img/small-icons/car.svg);">
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="18" height="18">
+										<use xlink:href="img/sprite.svg#icons--pencil"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="offers__circle">
+								<button class="offers__hover-btn">
+									<svg width="30" height="17">
+										<use xlink:href="img/sprite.svg#icons--send-mail"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer></footer>
+
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,432 @@
+.offers {
+   padding: 30px 0;
+
+   &__nav {
+      padding-bottom: 15px;
+
+      @include large {
+         margin-bottom: 0;
+
+         .logo {
+            display: none;
+         }
+
+         &::after {
+            display: none;
+         }
+      }
+   }
+
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 35px;
+      position: relative;
+
+      @include large {
+         margin-bottom: 55px;
+
+         &::after {
+            position: absolute;
+            content: "";
+            bottom: -30px;
+            width: 100%;
+            border-radius: 5px;
+            height: 5px;
+            background-color: $white;
+         }
+      }
+   }
+
+   &__form {
+      position: relative;
+      width: 100%;
+      margin-left: 30px;
+
+      @include large {
+         margin-left: 15px;
+      }
+   }
+
+   &__search-btn {
+      border-bottom-left-radius: 35px;
+      border-top-left-radius: 35px;
+   }
+
+   &__btn {
+      padding-left: 10px;
+      padding-right: 10px;
+      min-width: 285px;
+      background-color: $green-haze;
+      border: 3px solid transparent;
+      transition: border-color 0.3s, background-color 0.3s;
+
+      @include large {
+         font-size: 0;
+         padding: 0;
+         border-radius: 50%;
+         min-width: 40px;
+         height: 40px;
+
+         &::after {
+            display: none;
+         }
+
+         &::before {
+            position: absolute;
+            content: "";
+            top: 3px;
+            bottom: 3px;
+            right: 3px;
+            left: 3px;
+            background-image: url(../img/icons/plus.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+         }
+      }
+
+      &:focus {
+         border-color: $orange;
+      }
+
+      &:active {
+         border-color: $cello-500;
+         background-color: $cello-500;
+      }
+   }
+
+   &__content {
+      // display: table;
+      color: $cello-450;
+   }
+
+   &__point {
+      // display: table-row;
+      position: relative;
+
+      @include rwd(1400) {
+         overflow: hidden;
+
+         &::before {
+            content: "";
+            position: absolute;
+            top: 65px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 95%;
+            height: 2px;
+            margin: 0 auto;
+            background-color: $cello-450;
+            border-radius: 2px;
+         }
+      }
+
+      &:hover .offers__hover {
+         // display: flex;
+         width: auto;
+         opacity: 1;
+
+         @include rwd(1400) {
+            width: 100%;
+         }
+      }
+
+      &:not(:last-child):not(:first-child) {
+         margin-bottom: 10px;
+      }
+   }
+
+   &__hover {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(100%, -50%);
+      padding-left: 15px;
+      display: flex;
+      overflow: hidden;
+      width: 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      @include rwd(1400) {
+         width: 100%;
+         opacity: 1;
+         top: 10px;
+         justify-content: flex-end;
+         transform: translate(0, 0);
+      }
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         right: 20px;
+         left: 0;
+         bottom: 0;
+         width: 70px;
+         height: 50px;
+         background-image: var(--sm-bg-img);
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: contain;
+         display: none;
+
+         @include rwd(1400) {
+            display: block;
+         }
+      }
+
+      // &--car {
+      //    &::before {
+      //       background-image: url(../img/icons/car.svg);
+      //    }
+      // }
+   }
+
+   &__circle {
+      border-radius: 50%;
+      overflow: hidden;
+
+      &:not(:last-child) {
+         margin-left: 10px;
+      }
+   }
+
+   &__hover-btn {
+      width: 45px;
+      height: 45px;
+      @include nobtn-style;
+      background-color: $white;
+      fill: $cello-450;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.5s, color 0.3s;
+
+      @include rwd(1400) {
+         fill: $white;
+         background-color: $green-haze;
+      }
+
+      &:hover {
+         background-color: $orange;
+         fill: $white;
+      }
+   }
+
+   &__wrap {
+      width: 100%;
+      display: inline-grid;
+      grid-template-columns: 5.5% 13% 16% 1fr 1fr 1.2fr 1fr 13% 10%;
+      text-align: center;
+      border-radius: 35px;
+      background-color: $white;
+      cursor: default;
+      transition: background-color 0.5s, color 0.3s;
+
+      @include rwd(1400) {
+         display: flex;
+         // flex-direction: column;
+         flex-wrap: wrap;
+         margin: 0 auto;
+         padding: 68px 24px 0;
+      }
+
+      @include rwd(370) {
+         padding: 68px 10px 0;
+      }
+
+      &:hover {
+         background-color: $orange;
+         color: $white;
+
+         @include rwd(1400) {
+            background-color: $white;
+            color: inherit;
+         }
+
+         .offers__fake-checkbox {
+            fill: $white;
+         }
+      }
+
+      &--caption {
+         margin-bottom: 12px;
+         color: $white;
+         background-color: transparent;
+         cursor: text;
+
+         @include rwd(1400) {
+            display: none;
+         }
+
+         &:hover {
+            background-color: transparent;
+         }
+
+         .offers__data {
+            padding: 0;
+
+            &:not(:last-child) {
+               &::after {
+                  display: none;
+               }
+            }
+         }
+      }
+   }
+
+   &__data {
+      // display: table-cell;
+      position: relative;
+      padding: 13px 0;
+
+      @include rwd(1400) {
+         text-align: right;
+         font-size: 30px;
+         font-weight: 700;
+         color: $cello-450;
+         padding: 13px 0;
+         // padding: 13px 30px;
+
+         &:nth-child(1) {
+            display: none;
+         }
+
+         &:nth-child(2),
+         &:nth-child(3) {
+            text-align: right;
+            width: 100%;
+         }
+
+         &:nth-child(n+4) {
+            width: 50%;
+         }
+      }
+
+      @include large {
+         font-size: 20px;
+      }
+
+      @include rwd(370) {
+         &:nth-last-child(-n+2) {
+            width: 100%;
+         }
+      }
+
+      &:not(:last-child) {
+         &::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            bottom: 0;
+            left: 0;
+            background-color: $scorpion-700;
+            width: 1px;
+            height: 70%;
+
+            @include rwd(1400) {
+               display: none;
+            }
+         }
+      }
+
+      &--check {
+         padding: 0;
+
+         @include rwd(1400) {
+            align-self: flex-end;
+            padding: 13px 0;
+         }
+      }
+   }
+
+   &__data-info {
+      color: $scorpion-450;
+      font-size: 24px;
+      display: none;
+
+      @include rwd(1400) {
+         display: block;
+      }
+
+      @include large {
+         font-size: 18px;
+      }
+   }
+
+   &__check-title {
+      display: none;
+      transition: color 0.6s;
+
+      @include rwd(1400) {
+         display: block;
+      }
+
+      @include large {
+         font-size: 20px;
+      }
+   }
+
+   // If you need a check mark to remain
+   // &__check-label {
+   //    display: flex;
+   //    flex-direction: row-reverse;
+   //    align-items: center;
+   //    justify-content: flex-start;
+   // }
+
+   &__checkbox {
+      position: absolute;
+      z-index: -1;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+
+      &:checked+.offers__fake-checkbox {
+         opacity: 1;
+         color: $green-haze;
+      }
+
+      &:checked+.offers__check-title {
+         color: $green-haze;
+      }
+   }
+
+   &__fake-checkbox {
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border-bottom-left-radius: 35px;
+      border-top-left-radius: 35px;
+      cursor: pointer;
+      fill: $green-haze;
+      opacity: 0;
+      transition: opacity 0.6s, fill 0.6s;
+
+      @include rwd(1400) {
+         position: relative;
+         justify-content: flex-start;
+      }
+   }
+
+   &__check-svg {
+      // fill: $green-haze;
+      // opacity: 0;
+      // transition: opacity 0.6s, fill 0.6s;
+
+      @include rwd(1400) {
+         display: none;
+      }
+   }
+}
