@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="iw" dir="rtl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SHLOMO</title>
+	<link rel="shortcut icon" href="img/icons/favicon.png" type="image/png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body style="background-image: url(img/bg/bg-1.jpg); --bg-color: rgba(33, 50, 94, 0.8);">
+	<header class="header">
+		<div class="user">
+			<div class="user__wrap">
+				<a class="user__link" href="#">
+					<img class="user__img" src="img/icons/user.svg" alt="User photo">
+				</a>
+
+				<div class="user__info user__info--greeting">
+					<p class="user__name">שם סוכן
+						<span class="user__data">ישראל ישראלי</span>
+					</p>
+					<p class="user__phone">מספר
+						<a class="user__data" href="tel:123456">
+							123456
+						</a>
+					</p>
+				</div>
+			</div>
+			<span class="user__greeting">שלום,
+				<span class="user__data">חיים משה</span>
+			</span>
+		</div>
+	</header>
+
+	<main>
+		<section class="login">
+			<h1 class="visually-hidden"></h1>
+
+			<div class="container">
+				<h2 class="visually-hidden"></h2>
+
+				<nav class="nav login__nav">
+					<a class="logo nav__logo" href="#">
+						<img class="logo__img" src="img/icons/logo.png" alt="User photo">
+					</a>
+
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="#">כניסה למערכת</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">צפיה בהצעת המחיר</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="login__prompt">
+					<p>הזן את קוד הכניסה, אם לא קיבלת קוד לחץ על <button class="login__prompt-btn">שליחת קוד חדש</button></p>
+				</div>
+
+				<form class="login__form" action="#">
+					<div class="login__inputs">
+						<label class="login__label" for="username">שם משתמש</label>
+						<input class="input login__input" type="text" id="username" required>
+						<label class="login__label" for="password">סיסמא</label>
+						<input class="input login__input" type="password" id="password" required>
+					</div>
+					<div class="login__buttons">
+						<button class="btn login__btn" type="reset">ביטול</button>
+						<button class="btn btn--triangle login__btn login__btn--submit" type="submit">כניסה</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer></footer>
+
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
