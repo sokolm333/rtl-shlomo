@@ -114,7 +114,7 @@ function images() {
 				]
 			})
 		]))
-		.pipe(dest('dist/img'))
+		.pipe(dest('docs/img'))
 }
 
 //*-----Конвертация шрифтов---------
@@ -152,12 +152,12 @@ function build() {
 		'app/fonts/*.{woff,woff2}',
 		'app/img/sprite.svg'
 	], { base: 'app' })
-		.pipe(dest('dist'))
+		.pipe(dest('docs'))
 
 }
 
 function cleanDist() {
-	return del('dist')
+	return del('docs')
 }
 
 //*=Функция слежения за изменениями=
