@@ -10,9 +10,9 @@ $(function () {
 		event.stopPropagation();
 		$('.login__input').each(function () {
 			if ($(this).val() === "") {
-				$(this).addClass('input--empty');
+				$(this).addClass('input--empty').addClass('input--empty-focus');
 			} else {
-				$(this).removeClass('input--empty');
+				$(this).removeClass('input--empty').removeClass('input--empty-focus');
 			}
 		});
 		if ($('.login__input').hasClass('input--empty')) { } else {
@@ -30,15 +30,15 @@ $(function () {
 		event.preventDefault();
 		event.stopPropagation();
 		if ($('.search-form__input').val() == "") {
-			$('.search-form__input').addClass('input--empty').focus();
+			$('.search-form__input').addClass('input--empty-focus').focus();
 		} else {
 			$('.offers__form').submit();
-			$('.search-form__input').val("").removeClass('input--empty');
+			$('.search-form__input').val("").removeClass('input--empty-focus');
 		}
 	});
 	$('.search-form__input').on('blur', () => {
 		if ($('.offers__search-btn:hover').length == 0) {
-			$('.search-form__input').val("").removeClass('input--empty');
+			$('.search-form__input').val("").removeClass('input--empty-focus');
 		}
 	});
 });

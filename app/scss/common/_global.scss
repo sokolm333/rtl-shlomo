@@ -49,13 +49,13 @@ body {
    padding: 0 15px;
    margin: 0 auto;
 
-	@include rwd(1400){
-		max-width: 900px;
-	}
+   @include rwd(1400) {
+      max-width: 900px;
+   }
 
-	@include large {
-		max-width: 600px;
-	}
+   @include large {
+      max-width: 600px;
+   }
 }
 
 .input {
@@ -77,6 +77,11 @@ body {
    }
 
    &--empty {
+      color: $red;
+      box-shadow: 0 0 10px 5px $red;
+   }
+
+   &--empty-focus {
       &:focus {
          color: $red;
          box-shadow: 0 0 10px 5px $red;
@@ -156,9 +161,9 @@ body {
       align-items: center;
       transition: transform 0.5s, fill 0.3s;
 
-		@include large {
-			padding: 15px;
-		}
+      @include large {
+         padding: 15px;
+      }
 
       svg {
          max-width: 25px;

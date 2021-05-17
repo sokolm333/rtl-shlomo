@@ -107,6 +107,8 @@
       position: relative;
 
       @include rwd(1400) {
+         overflow: hidden;
+
          &::before {
             content: "";
             position: absolute;
@@ -126,6 +128,10 @@
          // display: flex;
          width: auto;
          opacity: 1;
+
+         @include rwd(1400) {
+            width: 100%;
+         }
       }
 
       &:not(:last-child):not(:first-child) {
@@ -162,7 +168,8 @@
          left: 0;
          bottom: 0;
          width: 70px;
-         height: 25px;
+         height: 50px;
+         background-image: var(--sm-bg-img);
          background-repeat: no-repeat;
          background-position: center;
          background-size: contain;
@@ -173,11 +180,11 @@
          }
       }
 
-      &--car {
-         &::before {
-            background-image: url(../img/icons/car.svg);
-         }
-      }
+      // &--car {
+      //    &::before {
+      //       background-image: url(../img/icons/car.svg);
+      //    }
+      // }
    }
 
    &__circle {
@@ -226,12 +233,21 @@
          // flex-direction: column;
          flex-wrap: wrap;
          margin: 0 auto;
-         padding-top: 68px;
+         padding: 68px 24px 0;
+      }
+
+      @include rwd(370) {
+         padding: 68px 10px 0;
       }
 
       &:hover {
          background-color: $orange;
          color: $white;
+
+         @include rwd(1400) {
+            background-color: $white;
+            color: inherit;
+         }
 
          .offers__fake-checkbox {
             fill: $white;
@@ -270,10 +286,12 @@
       padding: 13px 0;
 
       @include rwd(1400) {
+         text-align: right;
          font-size: 30px;
          font-weight: 700;
          color: $cello-450;
-         padding: 13px 30px;
+         padding: 13px 0;
+         // padding: 13px 30px;
 
          &:nth-child(1) {
             display: none;
@@ -292,6 +310,12 @@
 
       @include large {
          font-size: 20px;
+      }
+
+      @include rwd(370) {
+         &:nth-last-child(-n+2) {
+            width: 100%;
+         }
       }
 
       &:not(:last-child) {
@@ -314,8 +338,48 @@
 
       &--check {
          padding: 0;
+
+         @include rwd(1400) {
+            align-self: flex-end;
+            padding: 13px 0;
+         }
       }
    }
+
+   &__data-info {
+      color: $scorpion-450;
+      font-size: 24px;
+      display: none;
+
+      @include rwd(1400) {
+         display: block;
+      }
+
+      @include large {
+         font-size: 18px;
+      }
+   }
+
+   &__check-title {
+      display: none;
+      transition: color 0.6s;
+
+      @include rwd(1400) {
+         display: block;
+      }
+
+      @include large {
+         font-size: 20px;
+      }
+   }
+
+   // If you need a check mark to remain
+   // &__check-label {
+   //    display: flex;
+   //    flex-direction: row-reverse;
+   //    align-items: center;
+   //    justify-content: flex-start;
+   // }
 
    &__checkbox {
       position: absolute;
@@ -327,6 +391,11 @@
 
       &:checked+.offers__fake-checkbox {
          opacity: 1;
+         color: $green-haze;
+      }
+
+      &:checked+.offers__check-title {
+         color: $green-haze;
       }
    }
 
@@ -344,5 +413,20 @@
       fill: $green-haze;
       opacity: 0;
       transition: opacity 0.6s, fill 0.6s;
+
+      @include rwd(1400) {
+         position: relative;
+         justify-content: flex-start;
+      }
+   }
+
+   &__check-svg {
+      // fill: $green-haze;
+      // opacity: 0;
+      // transition: opacity 0.6s, fill 0.6s;
+
+      @include rwd(1400) {
+         display: none;
+      }
    }
 }
